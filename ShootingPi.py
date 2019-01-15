@@ -10,7 +10,7 @@ def shooting(x, y):
 
 
 r = 3  # number of runs
-N = 1000  # number of tries
+N = 1000  # number of shots
 
 
 for j in range(r):
@@ -25,7 +25,7 @@ for j in range(r):
     ys_m = np.array([])
 
     for i in range(1, N+1):
-        print('run %d of %d with frame %d of %d' % (j+1, r, i, N))
+        print('Run %d of %d with frame %d of %d.' % (j+1, r, i, N))
 
         x, y = np.random.random(2)
         h += shooting(x, y)
